@@ -39,5 +39,5 @@ public class Reservation {
 	@JsonIgnoreProperties({"reservations","messages"})
 	private Client client;
 	
-	private String score;
+	private Score score;
 }
