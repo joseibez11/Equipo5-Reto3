@@ -1,11 +1,13 @@
-package com.ciclo3.reto.reto3.controlador;
+package com.ciclo3.reto.retoTres.controlador;
 
 
-import com.ciclo3.reto.reto3.entidad.Message;
-import com.ciclo3.reto.reto3.servicio.MessageService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.ciclo3.reto.retoTres.entidad.Message;
+import com.ciclo3.reto.retoTres.servicio.MessageService;
 
 import java.util.List;
 
@@ -18,7 +20,7 @@ public class ApiMessage {
 
     @GetMapping("/all")
     public List<Message> getMessages(){
-        return service.getMessages();
+        return service.getMessage();
     }
 
     @PostMapping("/save")

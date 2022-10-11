@@ -1,11 +1,12 @@
-package com.ciclo3.reto.reto3.controlador;
+package com.ciclo3.reto.retoTres.controlador;
 
 
-import com.ciclo3.reto.reto3.entidad.Client;
-import com.ciclo3.reto.reto3.servicio.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.ciclo3.reto.retoTres.entidad.Client;
+import com.ciclo3.reto.retoTres.servicio.ClientService;
 
 import java.util.List;
 
@@ -18,7 +19,7 @@ public class ApiClient {
 
     @GetMapping("/all")
     public List<Client> getClients() {
-        return service.getClients();
+        return service.getClient();
     }
 
     @PostMapping("/save")

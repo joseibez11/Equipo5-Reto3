@@ -1,8 +1,7 @@
-package com.ciclo3.reto.reto3.controlador;
+package com.ciclo3.reto.retoTres.controlador;
 
-import com.ciclo3.reto.reto3.entidad.Message;
-import com.ciclo3.reto.reto3.entidad.Reservation;
-import com.ciclo3.reto.reto3.servicio.ReservationService;
+import com.ciclo3.reto.retoTres.entidad.Reservation;
+import com.ciclo3.reto.retoTres.servicio.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,8 +17,8 @@ public class ApiReservation {
 
     @GetMapping("/all")
     public List<Reservation> getReservations(){
-        return service.getReservations();
-    }
+        return service.getReservation();
+   }
 
     @PostMapping("/save")
     public ResponseEntity saveReservation(@RequestBody Reservation reservation) {

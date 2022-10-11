@@ -1,7 +1,8 @@
-package com.ciclo3.reto.reto3.controlador;
+package com.ciclo3.reto.retoTres.controlador;
 
-import com.ciclo3.reto.reto3.entidad.Category;
-import com.ciclo3.reto.reto3.servicio.CategoryService;
+import com.ciclo3.reto.retoTres.entidad.Category;
+import com.ciclo3.reto.retoTres.servicio.CategoryService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +19,7 @@ public class ApiCategory {
 
     @GetMapping("/all")
     public List<Category> getCategories() {
-        return service.getCategories();
+        return service.getCategory();
     }
 
     @PostMapping("/save")

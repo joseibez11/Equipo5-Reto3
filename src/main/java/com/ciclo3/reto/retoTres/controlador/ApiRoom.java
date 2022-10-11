@@ -1,7 +1,7 @@
-package com.ciclo3.reto.reto3.controlador;
+package com.ciclo3.reto.retoTres.controlador;
 
-import com.ciclo3.reto.reto3.entidad.Room;
-import com.ciclo3.reto.reto3.servicio.RoomService;
+import com.ciclo3.reto.retoTres.entidad.Room;
+import com.ciclo3.reto.retoTres.servicio.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,7 +17,7 @@ public class ApiRoom {
 
     @GetMapping("/all")
     public List<Room> findAllRooms(){
-        return service.getRooms();
+        return service.getRoom();
     }
 
     @PostMapping("/save")

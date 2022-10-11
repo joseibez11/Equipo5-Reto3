@@ -1,10 +1,12 @@
-package com.ciclo3.reto.reto3.controlador;
+package com.ciclo3.reto.retoTres.controlador;
 
-import com.ciclo3.reto.reto3.entidad.Score;
-import com.ciclo3.reto.reto3.servicio.ScoreService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.ciclo3.reto.retoTres.entidad.Score;
+import com.ciclo3.reto.retoTres.servicio.ScoreService;
 
 import java.util.List;
 
